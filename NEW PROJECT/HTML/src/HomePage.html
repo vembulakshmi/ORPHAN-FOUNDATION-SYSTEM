@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/NEW PROJECT/CSS/HomePage.css">
+    <title>FIRST PAGE</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+.header{
+    background-color:rgb(200, 255, 0);
+    font-family: 'Satisfy', cursive;
+    width: 2000px;
+    height:80px;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 9px -18px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  height:50%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  margin:5px;
+  background-color:slategray;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+    <h1 class="header">HELPING HANDS HOME
+        .
+    </h1>
+<div class="main">
+<center>
+  <h1><u>GLAD WELCOME TO OUR HOME</u></h1>
+</center>  
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/image/slideshow/gettyimages-108353497-612x612.jpg" style="width:100%" style="height:100%">
+  <div class="text"></div>
+</div>
+</div>
+<div class="wrapper">
+  <h2><center> <u>welcome to our family</u></center></h2>
+</div>
+<br>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/NEW PROJECT/HTML/img/gettyimages-1144231952-612x612.jpg" style="width:100%" style="height:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/NEW PROJECT/HTML/img/gettyimages-477437511-612x612.jpg" style="width:100%" style="height:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/NEW PROJECT/HTML/img/gettyimages-513326138-612x612.jpg" style="width:100%" style="height:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/NEW PROJECT/HTML/img/gettyimages-667668376-612x612.jpg" style="width:100%" style="height:100%">
+  <div class="text"></div>
+</div>
+</div>
+<br>
+
+<div style="text-align:center">
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+<span class="dot"></span> 
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+for (i = 0; i < slides.length; i++) {
+  slides[i].style.display = "none";  
+}
+slideIndex++;
+if (slideIndex > slides.length) {slideIndex = 1}    
+for (i = 0; i < dots.length; i++) {
+  dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex-1].style.display = "block";  
+dots[slideIndex-1].className += " active";
+setTimeout(showSlides, 3000); // Change image every 3 seconds
+}
+</script>
+
+  
+  <div class="row">
+    <div class="column">
+      <div class="content">
+        <img src="/NEW PROJECT/HTML/img/download (2).png " alt="Nature" style="width:100%">
+        <h3>OUR HISTORY</h3>
+        <p style="text-align: justify; font-family: 'Courier New', Courier, monospace;">Our organization has a rich and varied heritage, started in 1948 our Founding Director,
+           Maxton Strong was given a section of land in the middle of the jungles of North India by the newly
+           established Indian Government. There in the jungle, among wild animals, disease and struggle our
+           organization was born. Over the years as our family and facility grew, so too did the local area;
+            We continue to care, educate, entertain and support our children to the very best of our abilities.
+           </p>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="content">
+        <img src="/NEW PROJECT/HTML/img/downloadchild (1).jpg" alt="Mountains" style="width:100%">
+        <h3>OUR CHILDREN</h3>
+        <p style="text-align: justify; font-family: 'Courier New', Courier, monospace;">Please take some time to sit and browse through the rest of our website, we do our best to update it regularly.
+            There is plenty of information to see that we hope will bring you closer to understanding us, our children,
+            our goals and our dreams. If you are looking for volunteering information or volunteer work with our kids
+            please take a look at our visitors information section.Meals are eaten as a family in our Dining Room where children, 
+            staff and volunteers come together to give thanks for the day.Whether your child is starting kindergarten, middle 
+            school, high school or college, this is the time of year when parents can trust God and believe He has good plans 
+            for their children's lives.  </p>
+      </div>
+    </div>
+</div>
+<div class="row">
+   <div class="column">
+      <div class="content">
+        <img src="/NEW PROJECT/HTML/img/download.png" alt="Lights" style="width:100%">
+        <h3>WELCOME TO THE FAMILY!</h3>
+        <p style="text-align: justify; font-family: 'Courier New', Courier, monospace;">So take a look around our website; meet the team, see what we do. We would love to get to know you
+           more, learn about how you heard of our organization and also hear any thoughts or ideas that you might 
+           ave. If you are interested in volunteering or donating, please click the appropriate buttons below. The truth is you can be orphaned again and again and again.
+           This will hurt less and less each time until you can't feel a thing.The truth is you can be orphaned again and again. And the secret is, this will hurt less and less each time until you can't feel a thing. 
+          Welcome to the family!</p>
+      </div>
+    </div>
+
+      <div class="column">
+        <div class="content">
+          <img src="/NEW PROJECT/HTML/img/downloadschool (1).jpg" alt="Mountains" style="width:100%">
+          <h3>OUR SCHOOL</h3>
+          <p style="text-align: justify; font-family: 'Courier New', Courier, monospace;">Education is a critical foundation in every child’s life.
+             It is certainly something that we place great value in. As a result, it has always been an ambitious dream 
+             of ours to build a comprehensive school campus for our orphanage. In its finished form, our school,
+             the Maxton Strong School will include multiple buildings and provide education from nursery up to college
+            level. Our goal is to provide the highest-quality education at an affordable price,the children of our local community. There are other schools in our area,costs are cut at every opportunity, the quality of education is
+            sacrificed along the way.Trust schools are government-funded schools that receive extra support from a charitable
+             trust such as a local business, community group or educational charity. An individual school or a group of schools 
+             (such as schools that are in the same area, 
+            spread across the country or share a specialism) can choose to work with a trust.The government is 
+            planning to have 100 trust schools "in the pipeline" by the spring, and there are about 70 "pathfinder" .</p>
+        </div>
+        </div>  
+            
+ 
+</body>
+</html>

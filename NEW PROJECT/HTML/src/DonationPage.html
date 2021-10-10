@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scaled=1.0">
+        <link rel="stylesheet" href="/NEW PROJECT/CSS/DonationPage.css">
+        <script LANGUAGE="JavaScript">
+            function ValidateForm(form){
+            ErrorText= "";
+            if ( ( form.gender[0].checked == false ) && ( form.gender[1].checked == false ) )
+            {
+            alert ( "Please choose your Gender: Male or Female" );
+            return false;
+            }
+            if (ErrorText= "") { form.submit() }
+            }
+            </script>
+        <title>donation page</title>
+        <style type="text/css">
+        *{
+            padding: 0;
+            margin: 0;
+        }
+    
+        </style>
+    </head>
+    <body>
+        <div class="regform"><h1>DONATION FORM</h1></div>
+        <div class="main">
+            <form>
+                <div id="name">
+                    <h2 class="name">Name</h2>
+                    <input class="Firstname" type="text" name="firstname" placeholder="enter first name"><br>
+                    <label class="firstlabel">Firstname</label>
+                    <input class="Lastname" type="text" name="Lastname" placeholder="enter last name"><br>
+                    <label class="Lastlabel"></label>
+                </div>
+                <h2 class="name">Address</h2>
+                <input class="company" type="text" name="company" placeholder="enter your full adress">
+
+                <h2 class="name">Email</h2>
+                <input class="Email" type="text" name="Email" placeholder="enter email ID">
+
+                <h2 class="name">phone</h2>
+                <input class="code" type="text" name="area code" placeholder="area code">
+                <label class="area_code"> </label>
+
+                <input class="number" type="text" name="phone" placeholder="Mobile number">
+                <label class="phone number"></label>
+
+                
+                <h2 class="name">Donation Type </h2>
+                <select class="option" name="subject">
+                <option disabled="disabled" selected="selected"></option>    
+                <option>FOOD</option>
+                <option>EDUCATION</option>
+                <option>DRESS</option>
+                <option>SNACKS</option>
+                </select>
+
+                <h2 id="student">GENDER</h2>
+
+                <label class="radio">
+                    <input class="radio-one" type="radio" checked="checked" name=""onClick="ValidateForm(this.form)">
+                    <span class="chackmark"></span>
+                    MALE
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" name=""onClick="ValidateForm(this.form)">
+                    <span class="chackmark"></span>
+                    FEMALE
+                </label>
+                <label class="radio">
+                    <input class="radio-two" type="radio" name=""onClick="ValidateForm(this.form)">
+                    <span class="chackmark"></span>
+                    OTHERS
+                </label>
+                
+
+                <h2 class="name">BANK DETAILS</DETAILS></h2>
+                <input class="company" type="text" name="company" placeholder="enter your card type">
+
+                <h2 class="name">card number</DETAILS></h2>
+                <input class="number" type="number" name="phone" placeholder="card number">
+                <label class="phone number"></label>
+
+                <h2 class="name">Expiration date</DETAILS></h2>
+                <input class="number" type="datetime" name="phone" placeholder="mm/yyyy">
+                <label class="phone number"></label>
+
+                <h2 class="name">CVV</DETAILS></h2>
+                <input class="number" type="number" name="phone" placeholder="XXX">
+                <label class="phone number"></label>
+
+
+
+                <button type="submit" class="cls-btn"><a href="/NEW PROJECT/HTML/src/ThankYouPopUp.html">DONATE</a></button>
+
+                 
+
+                
+            </form>
+        </div>
+    </body>
+</html>
+

@@ -1,0 +1,49 @@
+body{
+    background-image: url(/NEW\ PROJECT/HTML/img/food.jfif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 40px;
+
+}
+.cls-h{
+    background-color: rgb(240, 160, 12);
+background-position: center;
+font-size: 39px;
+}
+.cls-p{
+    background-color: rgb(238, 157, 8);
+    background-position: center;
+    font-size: 30px;
+}
+.cls-h3{
+    color: rgb(247, 245, 243);
+    font-size: 40px;
+    background-color:rgb(243, 161, 8);
+}
+.cls-head{
+    color: rgb(247, 245, 243);
+    font-size:40px;
+    background-color:rgb(235, 157, 12);
+}
+table, th, td{
+    width:auto;
+    margin: auto;
+    border: 5px solid blueviolet;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 30px;table-layout: fixed;
+    border-color:black;
+    table-layout: fixed;
+}
+th, td{
+    padding: 25px;
+}
+th{
+    background-color: darkorange;
+    
+}
+td{
+    background-color: rgba(255, 140, 0, 0.568);
+}
